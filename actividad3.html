@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+</head>
+
+<body>
+    <h1>Formulario de Envio de Ticket </h1>
+    <img src="./assets/img/cinepolis_argentina_logo.jpeg" alt="Logo cinepolis" width="150px" >
+    <h2>Cinepolis Neuquen</h2>
+    <!-- Una empresa quiere un formulario de contacto para posibles clientes.
+        Utilizar por lo menos una lista y párrafo.
+        Debe solicitar:
+
+        -Empresa del solicitante (real)
+        -Página web de la empresa (real)
+        -Agregar imagen que represente la empresa.
+        -Asunto del mensaje
+        -Mensaje detallado
+        -Utilizar checkbox
+        -Utilizar un selector de opciones
+        -Adjuntar archivo
+        -El botón Submit debe decir "Contacto"-->
+    <p><strong>Complete el siguiente formulario </strong></p>
+
+
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email">
+
+
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese su domicilio">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Asunto</legend>
+            <label for="asunto"></label>
+            <textarea name="asunto" id="asunto" placeholder="(Opcional)"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Tema Cinepolis</legend>
+            <label for="tema">Tema</label>
+            <select name="tema" id="tema">
+                <option value="">seleccione</option>
+                <option value="Boton de arrepentimiento">Boton de arrepentimiento</option>
+                <option value="Cambio de entrada">Cambio de entrada</option>
+                <option value="Error de compra">Error de compra</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Tema Movie Club</legend>
+            <label for="movie">movie</label>
+            <select name="movie" id="movie">
+                <option value="">seleccione</option>
+                <option value="Reactivacion">Reactivacion</option>
+                <option value="Cuenta deshabilitada">Cuenta deshabilitada</option>
+                <option value="beneficios">Beneficios</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>D.N.I</legend>
+            <label for="dni">DNI</label>
+            <input type="number" name="dni" id="dni">
+        </fieldset>
+        <fieldset>
+            <legend>Alianza</legend>
+            <label for="alianza">alianza</label>
+            <select name="alianza" id="alianza">
+                <option value="">seleccione</option>
+                <option value="MovieClub">MovieClub</option>
+                <option value="Santender">Santender</option>
+                <option value="Club La Nacion">Club La nacion</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Complejo</legend>
+            <label for="complejo">complejo</label>
+            <select name="complejo" id="complejo">
+                <option value="">seleccione</option>
+                <option value="Cinepolis recoleta">Cinepolis recoleta</option>
+                <option value="Cinepolis houssay">cinepolis houssay</option>
+                <option value="Cinepolis merlo">cinepolis merlo</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Descripcion</legend>
+            <label for="descripcion"></label>
+            <textarea name="descripcion" id="descripcion" placeholder="Escribe algo"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="robot">No soy un robot</label>
+            <input type="checkbox" name="robot" id="robot">
+        </fieldset>
+
+        <input type="submit" name="Contacto">
+
+
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>

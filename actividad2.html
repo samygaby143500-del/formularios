@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+</head>
+
+<body>
+    <h1> Formulario de Reserva</h1>
+    <h2>Un hotel necesita un formulario para reservas. Debe incluir: <br>
+        Fecha de llegada <br>
+        Fecha de salida <br>
+        Número de huéspedes <br>
+        Tipo de habitación (Individual, Doble, Suite) <br>
+        Comentarios especiales (dietas, necesidades de accesibilidad Formulario de Reserva) <br>
+    </h2>
+
+    <form action="">
+        <fieldset>
+            <legend><strong>Informacion Huespedes</strong></legend>
+            <label for="llegada">Fecha de llegada</label>
+            <input type="date" name="llegada" id="llegada">
+            <label for="salida">Fecha de salida</label>
+            <input type="date" name="salida" id="salida">
+
+        </fieldset>
+        <fieldset>
+            <legend><strong>Infromacion de reserva</strong></legend>
+            <label for="huespedes">Numero de huespedes</label>
+            <input type="number" name="huespedes" id="huespedes">
+
+            <label for="habitacion">Tipo de habitacion</label>
+            <select name="habitacion" id="habitacion">
+                <option value="">Seleccione el tipo</option>
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="Suite">Suite</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Comentarios especiales (dietas, necesidades de accesibilidad Formulario de Reserva)</strong>
+            </legend>
+            <label for="comentario">Ingrese sus comentarios</label>
+            <div>
+                <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

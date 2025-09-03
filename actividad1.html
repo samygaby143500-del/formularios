@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad 1</title>
+</head>
+
+<body>
+
+    <h1>Encuesta de satisfaccion</h1>
+    <h2>Un restaurante quiere evaluar la experiencia de sus clientes. Necesita recoger:
+        <br> - Calificación del servicio (1-5 estrellas)
+        <br>- ¿Recomendaría el restaurante a sus amigos? (Sí/No)
+    </h2>
+    <form action="" method="post">
+        <fieldset>
+            <legend>calificacion de servicio</legend>
+            <label for="estrellas">Estrellas</label>
+            <select name="estrellas" id="estrellas">
+                <option value="">Seleccione estrellas</option>
+                <option value="1 ">⭐ </option>
+                <option value="2">⭐ ⭐ </option>
+                <option value="3">⭐ ⭐ ⭐ </option>
+                <option value="3">⭐ ⭐ ⭐ ⭐</option>
+                <option value="3">⭐ ⭐ ⭐ ⭐ ⭐</option>
+            </select>
+
+
+            <p>¿Recomendaria con sus amigos?:</p>
+            <label for="si"> si</label>
+            <input type="radio" name="recomendar" id="si" value="si">
+
+            <label for="no">no</label>
+            <input type="radio" name="no" id="recomendar" value="no">
+
+
+        </fieldset>
+        <input type="submit" value="Guardar">
+
+
+    </form>
+</body>
+
+</html>

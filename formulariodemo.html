@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Fromulario Demo
+    </h1>
+    <h2>
+        Solicitando gustos a un cliente
+    </h2>
+    <!--para organizar el formulario utilizaremos etiquetas fieldset, legend y div. todo el formulario DEBE IR dentro de la etiqueta form-->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required><!--required hace el campo obligatorio-->
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apelllido" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Gustos</legend>
+            <label for="gustos">seleccionar un gusto</label>
+            <select name="gustos" id="gustos">
+                <option value="">Seleccionar un gusto</option>
+                <option value="musica">musica</option>
+                <option value="cine">cine</option>
+                <option value="deportes">deportes</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Guardar">
+
+
+
+
+    </form>
+
+
+
+
+</body>
+</html>

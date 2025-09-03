@@ -13,7 +13,8 @@
         Nos permite introducir valores, es decir. entrada de datos. Los input van a tener diferentes tipos segun el dato que ingresamos
     </p>
 
-
+<!--id: identidicador-->
+<!--name: -->
     <label for="nombre">Ingrese su nombre</label>
     <input type="text" name="nombre" id="nombre">
 
@@ -33,9 +34,79 @@
     <label for="edad">Ingrese su edad</label>
     <input type="number" name="edad" id="edad" min="0" max="120">
     
-    
+
     <label for="nacimiento">Ingrese su nacimiento</label>
     <input type="date" name="nacimiento" id="nacimiento">
+
+
+<!--value significa valor-->
+    <label for="comida">Comida Asado</label>
+    <input type="radio" name="comida" id="comida" value="asado">
+
+    <label for="comida1">Comida Pizza</label>
+    <input type="radio" name="comida" id="comida1" value="pizza">
+
+    <label for="comida2">Comida Canelones</label>
+    <input type="radio" name="comida" id="comida2" value="canelones">
+
+
+    <!--checkbox me permite ue el usuario seleccione, un, ninguna o todas las opciones-->
+    <label for="deporte_1">Patin</label>
+    <input type="checkbox" name="deporte_1" id="deporte_1" value="patin">
+
+    <label for="deporte_2">natacion</label>
+    <input type="checkbox" name="deporte_2" id="deporte_2" value="natacion">
+
+    <!--paleta colores-->
+    <label for="color">Paleta de colores</label>
+    <input type="color" name="color" id="color" value="#00ff00">
+
+
+    <!--subir archivos-->
+    <label for="archivo">Subir un archivo</label>
+    <input type="file" name="archivo" id="archivo">
+
+
+    <h3>Selector de una lista desplegable</h3>
+    <p>
+        Me permite elegir un elemento en una lista de opciones
+    </p>
+
+
+    <label for="cursos">Cursos del Cet 30</label>
+    <select name="cursos" id="cursos">
+        <option value="">Seleccione una opcion</option>
+        <option value="primero">Primero</option>
+        <option value="segundo">Segundo</option>
+        <option value="tercero">Tercero</option>
+    </select>
+
+    
+    <h3>Texto de multiples lineas</h3>
+    <p>
+        Sirve para escribir mucho texto organizado en filas y columnas.
+        Se utilizan los atributosa row y cols para definir filas y columnas respectivamente, utilizando valores enteros
+    </p>
+
+    <label for="comentario">Escribir un comentario</label>
+    <textarea name="comentario" id="comentario" cols="20" rows="20"></textarea>
+
+
+    <h3>Envio del formulario</h3>
+    
+
+
+
+    <div>
+        <input type="text" name="colegio" id="colegio" placeholder="Ingrese colegio">
+        <!--placeholder ubica un mensjae dentro de un input. el mensaje es una instruccion para el usuario. se ve en tono gris y al completar la entrada el valor de placeholder esaparece-->
+    </div>
+
+    <input type="submit" name="Enviar">
+
+
+ 
+
 
 
 
